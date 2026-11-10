@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/asesoria-empresa-en-mexico-extranjeros-landing.html"
+    }
+  ]
+}
