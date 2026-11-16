@@ -461,7 +461,7 @@
     <div>
       <p class="eyebrow">Asesoría para tu empresa en México</p>
       <h2 id="caso-t" class="rv">Revisemos tu caso</h2>
-      <p class="intro rv" style="--i:1">Déjanos tu correo. Te escribiremos para conocer tu proyecto en México y revisar cómo podemos ayudarte.</p>
+      <p class="intro rv" style="--i:1">Cuéntanos qué quieres hacer en México. Te escribiremos para revisar tu caso y preparar una propuesta.</p>
       <div class="alt rv" style="--i:2">
         <p><b style="color:#fff">¿Prefieres WhatsApp?</b></p>
         <a class="btn btn-primary js-wa" href="https://wa.me/525541355644?text=Hola%2C%20CICDE.%20Vengo%20de%20Google%20y%20quiero%20informaci%C3%B3n%20para%20mi%20empresa%20en%20M%C3%A9xico.%0APa%C3%ADs%20donde%20estoy%3A%20%0AQu%C3%A9%20quiero%20hacer%20%28empresa%20nueva%2C%20filial%20o%20sucursal%29%3A%20%0AActividad%20del%20negocio%3A%20" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
@@ -472,7 +472,18 @@
     <form id="form" class="rv" style="--i:1" method="post" data-endpoint="" data-thanks="gracias-asesoria-extranjeros.html">
       <fieldset disabled id="form-fields">
       <legend class="visually-hidden">Datos para la asesoría</legend>
+      <div class="f"><label for="nombre">Nombre <em>*</em></label><input id="nombre" name="nombre" autocomplete="name" maxlength="120" required></div>
       <div class="f"><label for="correo">Correo electrónico <em>*</em></label><input id="correo" name="correo" type="email" autocomplete="email" maxlength="254" required></div>
+      <div class="f full">
+        <label for="que">¿Qué quieres hacer? <em>*</em></label>
+        <select id="que" name="que" required>
+          <option value="">Elige una opción</option>
+          <option>Crear una empresa nueva</option>
+          <option>Abrir una filial o subsidiaria</option>
+          <option>Abrir una sucursal</option>
+          <option>Aún no lo sé</option>
+        </select>
+      </div>
       <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="gclid">
       <p class="form-privacy" id="form-privacy">Al enviar tu caso, confirmas que has leído y aceptas el <a class="link" href="https://cicde.mx/aviso-privacidad/" target="_blank" rel="noopener noreferrer">Aviso de Privacidad</a>.</p>
       <button class="btn btn-dark" type="submit" aria-describedby="form-privacy">Enviar mi caso<svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
